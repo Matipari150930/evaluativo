@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.icono {
+    width: 80px;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.icono img {
+    width: 50px;
+    height: 50px;
+}
+
+.barra-tareas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.boton-inicio {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offcanvasBottom {
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 500px) {
+    .movil{
+    display: none;
+    }
+}
+
+@media (max-width: 500px) {
+   
+    .desktop {
+        display: none;
+    }
+
+    .movil {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: antiquewhite;
+    }
+
+    .barra-estado {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    .apps {
+        width: 100%;
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .app {
+        width: 60px;
+        text-align: center;
+        color: white;
+    }
+
+    .app img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .dock {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(192, 133, 23, 0.692);
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+}
