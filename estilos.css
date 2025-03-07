@@ -65,12 +65,6 @@ body:focus {
     display: flex;
 }
 
-.offcanvas {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-}
-
 
 .card-body {
     text-align: center;
