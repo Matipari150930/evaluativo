@@ -21,7 +21,12 @@
     background-color: rgb(245, 245, 245);
     transform: translateY(50px);
     animation: aparecer 1s ease-out forwards;
-    padding: 10%;
+    padding: 10%; 
+
+    h6 {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(42, 36, 119);
+    }
 }
 
 .contacto {
